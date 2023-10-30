@@ -1,0 +1,23 @@
+{
+  "name": "directus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "live": "npx directus start",
+    "start": "npm run live",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "restart": "sudo su -c 'pm2 restart Directus'",
+    "stop": "sudo su -c 'pm2 stop Directus'",
+    "start-manual": "sudo su -c 'pm2 start Directus'",
+    "status": "sudo su -c 'pm2 list'",
+    "monitor": "sudo su -c 'pm2 monit'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "directus": "^10.6.1",
+    "pg": "^8.11.3"
+  }
+}
